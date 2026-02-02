@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dream Japan 2026 | Ultimate Detail</title>
+    <title>Dream Japan 2026 | Ultimate Detail & Choice</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Outfit:wght@300;600;800&display=swap"
@@ -15,8 +15,6 @@
             background: #007bff;
             color: white;
         }
-
-        /* Blue Line Bus */
 
         /* Option Box for Alternate Plans */
         .option-box {
@@ -46,6 +44,20 @@
             text-transform: uppercase;
             font-weight: 800;
         }
+
+        /* Alternative Option Box (Smaller & Distinct) */
+        .option-note {
+            background: rgba(255, 255, 255, 0.03);
+            border-left: 3px dashed var(--secondary);
+            padding: 1rem;
+            margin: 1rem 0;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        .option-note strong {
+            color: var(--secondary);
+        }
     </style>
 </head>
 
@@ -55,7 +67,7 @@
     <header>
         <div>
             <h1>DREAM JAPAN 2026</h1>
-            <p>11 - 17 กุมภาพันธ์ | Tatego-Hama & Cycling Option</p>
+            <p>11 - 17 กุมภาพันธ์ | Choose Your Adventure</p>
         </div>
     </header>
 
@@ -86,16 +98,16 @@
                     <ul>
                         <li><span class="badge badge-ginza">G</span> <b>Ginza Line:</b> สายสีส้ม (Metro)</li>
                         <li><span class="badge badge-jr-chuo">JC</span> <b>JR Chuo Line:</b> สายสีส้มเข้ม (Rapid)</li>
-                        <li><span class="badge badge-blue-line">BUS</span> <b>Blue Line Bus:</b> สายสีฟ้า (ไป
-                            Tatego-Hama)</li>
-                        <li><span class="badge" style="background:var(--secondary); color:black;">BIKE</span> <b>Bike
-                                Rental:</b> เช่าจักรยาน</li>
+                        <li><span class="badge badge-jr-ueno">JT</span> <b>JR Ueno-Tokyo:</b> สายสีส้ม/เขียว</li>
+                        <li><span class="badge badge-enoden">EO</span> <b>Enoden:</b> สายสีเขียว (Kamakura)</li>
+                        <li><span class="badge badge-blue-line">BUS</span> <b>Blue Line Bus:</b> สายสีฟ้า (ไป Shojiko)
+                        </li>
                     </ul>
                 </div>
             </div>
         </section>
 
-        <!-- DAY 1 -->
+        <!-- DAY 1: ARRIVAL -->
         <section id="day1" class="day-section">
             <div class="day-header">
                 <span class="day-number">01</span>
@@ -105,112 +117,207 @@
             <div class="day-card">
                 <img src="images/asakusa.png" alt="Asakusa" class="day-image">
                 <div class="timeline">
-                    <div class="timeline-item"><span class="time">09:30</span>
-                        <p class="activity">🚆 เข้า Asakusa <span class="badge badge-toei-asakusa">KS</span> Keisei Sky
-                            Access</p>
+                    <div class="timeline-item"><span class="time">08:00</span>
+                        <p class="activity">🛬 ถึงสนามบิน Narita Airport (Terminal 2)</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="time">09:30</span>
+                        <p class="activity">🚆 นั่งรถไฟเข้า Asakusa <span class="price-tag">¥1,300</span></p>
+                        <p class="note"><b>1. รถไฟ:</b> <span class="badge badge-toei-asakusa">KS</span> <b>Keisei Sky
+                                Access Express (Direct)</b></p>
+                        <p class="note"><b>2. จุดสังเกต:</b> มองหาป้าย "Keisei Line" และรถไฟสี <span
+                                style="color:#e6006c; font-weight:bold;">สีส้ม / แดงกุหลาบ</span></p>
+                        <p class="note"><b>3. การเดินทาง:</b> นั่งยาวรวดเดียวไม่ต้องเปลี่ยนขบวน ลงสถานี <b>Asakusa
+                                (A18)</b></p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="time">11:00</span>
+                        <p class="activity">🏨 ฝากกระเป๋า / Check-in @ Kaike Asakusa</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- DAY 2: TATEGO-HAMA & CYCLING OPTION -->
+        <!-- DAY 2: KAWAGUCHIKO & TATEGO-HAMA -->
         <section id="day2" class="day-section">
             <div class="day-header">
                 <span class="day-number">02</span>
-                <h2 class="day-title">Your Name, Snow & Choice <span
-                        style="font-size: 1rem; color: var(--text-muted);">| Thu 13 Feb</span></h2>
+                <h2 class="day-title">Your Name & Tatego-Hama <span style="font-size: 1rem; color: var(--text-muted);">|
+                        Thu 13 Feb</span></h2>
             </div>
+
+            <!-- MISSION SELECTION (TOP) -->
+            <div class="option-box"
+                style="margin: 0 0 2rem 0; border: 2px solid var(--primary); background: rgba(189, 147, 249, 0.1);">
+                <h3 style="color: var(--primary); text-align: center; margin-top: 0;">🎌 เลือกแผนช่วงบ่าย (Mission
+                    Select)</h3>
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1rem;">
+                    <div
+                        style="flex: 1; min-width: 250px; background: rgba(0,0,0,0.3); padding: 1rem; border-radius: 8px;">
+                        <strong style="color: #50fa7b;">🎫 PLAN A: Tatego-Hama (Recommended)</strong>
+                        <p style="font-size: 0.9rem; color: #ccc;">นั่งบัสไปหาดลับ คนน้อย ถ่ายรูปสวย ไม่เหนื่อย</p>
+                    </div>
+                    <div
+                        style="flex: 1; min-width: 250px; background: rgba(0,0,0,0.3); padding: 1rem; border-radius: 8px;">
+                        <strong style="color: #ff79c6;">🚲 PLAN B: Cycling Lake</strong>
+                        <p style="font-size: 0.9rem; color: #ccc;">เช่าจักรยานหน้าสถานี ปั่นชมวิว ชิลๆ แต่ต้องออกแรง</p>
+                    </div>
+                </div>
+            </div>
+
             <div class="day-card">
                 <img src="images/kawaguchiko.png" alt="Fuji Snow" class="day-image">
                 <div class="timeline">
+                    <!-- MORNING (COMMON) -->
+                    <div class="timeline-item">
+                        <span class="time">06:00</span>
+                        <p class="activity">⏰ ตื่นนอน / อาบน้ำแต่งตัว</p>
+                    </div>
                     <div class="timeline-item">
                         <span class="time">07:00</span>
-                        <p class="activity">🚆 ไป Suga Shrine (Your Name) <span class="price-tag">¥180</span></p>
-                        <p class="note"><span class="badge badge-ginza">G</span> Asakusa → Kanda → <span
-                                class="badge badge-jr-chuo">JC</span> Yotsuya</p>
+                        <p class="activity">🚆 Start: ไปสถานี Kanda <span class="price-tag">¥180</span></p>
+                        <p class="note"><span class="badge badge-ginza">G</span> <b>Ginza Line (สายสีส้ม)</b>: Asakusa
+                            (G19) → Kanda (G13)</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="time">07:15</span>
+                        <p class="activity">🚆 Next: ไป Yotsuya (Your Name)</p>
+                        <p class="note"><span class="badge badge-jr-chuo">JC</span> <b>JR Chuo Line (สายสีส้มเข้ม
+                                Rapid)</b>: Kanda → Yotsuya</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="time">07:30</span>
+                        <p class="activity">🎬 ถ่ายรูปบันไดแดง "Suga Shrine"</p>
+                        <p class="note">เดิน 10 นาที (เปิด Map: Suga Shrine Steps)</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="time">08:30</span>
+                        <p class="activity">🚆 ไป Shinjuku <span class="price-tag">¥170</span></p>
+                        <p class="note"><span class="badge badge-jr-chuo">JC</span> <b>JR Chuo Line (สายสีส้มเข้ม)</b>:
+                            Yotsuya → Shinjuku</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="time">09:00</span>
+                        <p class="activity">🚶 ไปท่ารถบัส "Busta Shinjuku"</p>
+                        <p class="note">ขึ้นลิฟต์ไปชั้น 4 (New South Gate)</p>
                     </div>
                     <div class="timeline-item">
                         <span class="time">09:45</span>
-                        <p class="activity">� Bus to Kawaguchiko <span class="price-tag">¥2,200</span></p>
-                        <p class="note">ขึ้นที่ Busta Shinjuku ชั้น 4</p>
+                        <p class="activity">🚌 Bus ออกเดินทางไป Kawaguchiko <span class="price-tag">¥2,200</span></p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="time">11:45</span>
+                        <p class="activity">🗻 ถึง Kawaguchiko Station</p>
+                        <p class="note">ซื้ออาหารเที่ยง เตรียมเลือกแผน!</p>
                     </div>
 
-                    <!-- OPTION SPLIT -->
-                    <div style="text-align: center; margin: 2rem 0; font-weight: bold; color: var(--text-muted);">---
-                        เลือกแผนช่วงบ่าย (Choose an Option) ---</div>
-
-                    <div class="option-box">
-                        <div class="option-title"><span class="option-tag">PLAN A</span> 🚌 ไปหาดลับ Tatego-Hama
-                            (แนะนำ!)</div>
-                        <div class="timeline-item" style="border-left-color: var(--secondary);">
-                            <span class="time">12:00</span>
-                            <p class="activity">นั่งบัส Blue Line ไป Lake Shojiko <span class="price-tag">¥800</span>
-                            </p>
-                            <p class="note"><b>ขึ้นรถ:</b> Kawaguchiko Station (Pillar No. 1)</p>
-                            <p class="note"><b>ลงป้าย:</b> No. 116 "Tatego-Hama"</p>
+                    <!-- PLAN A TIMELINE -->
+                    <div class="option-box" style="border-color: #50fa7b; margin-top: 2rem;">
+                        <div class="option-title" style="color: #50fa7b;">🎫 ถ้าเลือก PLAN A (ไปหาด Tatego-Hama Beach
+                            จริงๆก็ปั่นไปได้ด้วยนะ)</div>
+                        <div class="timeline-item" style="border-left-color: #50fa7b;">
+                            <span class="time">12:10</span>
+                            <p class="activity">ขึ้นรถบัสสายสีฟ้า (Blue Line)</p>
+                            <p class="note"><b>ป้ายรถ:</b> เบอร์ 1 (หน้าสถานี)</p>
+                            <p class="note"><b>สายรถ:</b> Narusawa / Shojiko / Motosuko Line</p>
                         </div>
-                        <div class="timeline-item" style="border-left-color: var(--secondary);">
+                        <div class="timeline-item" style="border-left-color: #50fa7b;">
+                            <span class="time">12:50</span>
+                            <p class="activity">ลงป้าย 116 "Tatego-Hama"</p>
+                            <p class="note">ใช้เวลาเดินทางประมาณ 40 นาที</p>
+                        </div>
+                        <div class="timeline-item" style="border-left-color: #50fa7b;">
                             <span class="time">13:00</span>
-                            <p class="activity">🌊 ชมวิว Kodaki Fuji ที่หาด Tatego-Hama</p>
-                            <p class="note">นั่งปิคนิคกินข้าวเที่ยงริมหาด คนน้อย วิวเทพ</p>
+                            <p class="activity">🌊 ปิคนิคริมหาด Tatego-Hama</p>
+                            <p class="note">ชมวิวฟูจิอุ้มลูก (Kodaki Fuji) สงบๆ</p>
+                        </div>
+                        <div class="timeline-item" style="border-left-color: #50fa7b;">
+                            <span class="time">14:40</span>
+                            <p class="activity">รอรถบัสขากลับ (สายเดิม)</p>
+                            <p class="note">เช็ครอบรถให้ดี รถมาน้อย (แนะนำรอบ ~14:50)</p>
                         </div>
                     </div>
 
+                    <!-- PLAN B TIMELINE -->
                     <div class="option-box" style="border-color: #ff79c6;">
-                        <div class="option-title" style="color: #ff79c6;"><span class="option-tag"
-                                style="background: #ff79c6; color: white;">PLAN B</span> 🚲 เช่าจักรยานปั่นรอบ
-                            Kawaguchiko</div>
+                        <div class="option-title" style="color: #ff79c6;">🚲 ถ้าเลือก PLAN B (ปั่นจักรยาน)</div>
                         <div class="timeline-item" style="border-left-color: #ff79c6;">
                             <span class="time">12:00</span>
-                            <p class="activity">เช่าจักรยานหน้าสถานี <span class="price-tag">¥1,500/3ชม.</span></p>
-                            <p class="note">ร้าน "Fujikanko Travel" หรือ "Soranoshita" (มีจักรยานไฟฟ้า)</p>
+                            <p class="activity">เช่าจักรยานหน้าสถานี</p>
+                            <p class="note">ร้าน "Fujikanko Travel" หรือ "Soranoshita"</p>
                         </div>
                         <div class="timeline-item" style="border-left-color: #ff79c6;">
                             <span class="time">12:30</span>
-                            <p class="activity">🚴 ปั่นไปสะพาน Kawaguchiko Bridge</p>
-                            <p class="note">ปั่นเลาะริมทะเลสาบไป Oishi Park (ทางเรียบ ปั่นง่าย วิวสวย)</p>
-                            <p class="note"><b>ระยะทาง:</b> ประมาณ 6-7 กม. (ปั่นชิลๆ 30-40 นาที)</p>
+                            <p class="activity">ปั่นไป Oishi Park (6 กม.)</p>
+                            <p class="note">ข้ามสะพาน Kawaguchiko Ohashi ชมวิวฟูจิเต็มๆ</p>
+                        </div>
+                        <div class="timeline-item" style="border-left-color: #ff79c6;">
+                            <span class="time">15:00</span>
+                            <p class="activity">คืนจักรยานที่สถานี</p>
                         </div>
                     </div>
 
+                    <!-- RETURN (COMMON) -->
                     <div class="timeline-item">
                         <span class="time">16:00</span>
-                        <p class="activity">🚌 Bus Return to Shinjuku <span class="price-tag">¥2,200</span></p>
+                        <p class="activity">🚌 ขึ้นรถบัสกลับ Shinjuku <span class="price-tag">¥2,200</span></p>
+                        <p class="note">ขึ้นที่สถานี Kawaguchiko (จุดเดิมที่ลงรถตอนเช้า)</p>
                     </div>
                     <div class="timeline-item">
                         <span class="time">19:00</span>
-                        <p class="activity">🚆 กลับ Asakusa <span class="price-tag">¥500</span></p>
-                        <p class="note"><span class="badge badge-jr-chuo">JC</span> Shinjuku → Akihabara → <span
-                                class="badge badge-tx">TX</span> Asakusa</p>
+                        <p class="activity">🚆 กลับ Asakusa (ทางลัด) <span class="price-tag">¥500</span></p>
+                        <p class="note">1. <span class="badge badge-jr-chuo">JC</span> <b>JR Chuo Line:</b> Shinjuku →
+                            Akihabara</p>
+                        <p class="note">2. <span class="badge badge-tx">TX</span> <b>Tsukuba Express:</b> Akihabara →
+                            Asakusa</p>
                     </div>
+                    <div class="daily-cost">💰 Day 2 Total: ~7,800 เยน</div>
                 </div>
             </div>
         </section>
 
-        <!-- DAY 3 -->
+        <!-- DAY 3: REGISTRATION -->
         <section id="day3" class="day-section">
             <div class="day-header">
                 <span class="day-number">03</span>
-                <h2 class="day-title">Registration & Shibuya <span style="font-size: 1rem; color: var(--text-muted);">|
-                        Fri 14 Feb</span></h2>
+                <h2 class="day-title">Registration Day <span style="font-size: 1rem; color: var(--text-muted);">| Fri 14
+                        Feb</span></h2>
             </div>
             <div class="day-card">
                 <img src="images/shibuya.png" alt="Shibuya" class="day-image">
                 <div class="timeline">
+                    <div class="timeline-item">
+                        <span class="time">09:00</span>
+                        <p class="activity">⏰ ตื่นนอน / เตรียมตัวลงทะเบียน</p>
+                    </div>
                     <div class="registration-alert">
                         <h3>💻 12:00 PM (10:00 Thai Time)</h3>
-                        <p><b>ลงทะเบียนเรียน</b> @ Hotel</p>
+                        <p><b>MISSION: ลงทะเบียนเรียน</b> @ Hotel Wi-Fi</p>
+                        <p style="font-size:0.9rem; margin-top:5px;">เช็คเน็ตให้พร้อม เตรียม Link สำรอง</p>
                     </div>
                     <div class="timeline-item">
                         <span class="time">14:30</span>
-                        <p class="activity">🚆 ไป Shibuya <span class="price-tag">¥260</span></p>
-                        <p class="note"><span class="badge badge-ginza">G</span> Asakusa → Shibuya</p>
+                        <p class="activity">🚆 เดินทางไป Shibuya <span class="price-tag">¥260</span></p>
+                        <p class="note"><span class="badge badge-ginza">G</span> <b>Ginza Line (สายสีส้ม)</b>: Asakusa
+                            (G19) → Shibuya (G01)</p>
+                        <p class="note">นั่งยาวสุดสาย ต้นทาง-ปลายทาง (ได้นั่งแน่นอน)</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="time">15:30</span>
+                        <p class="activity">🏙️ Shibuya Crossing / Hachiko / Shopping</p>
+                        <p class="note">เดินเล่น Parco (Nintendo/Pokemon Center)</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="time">21:00</span>
+                        <p class="activity">🚆 นั่งรถไฟกลับที่พัก <span class="price-tag">¥260</span></p>
+                        <p class="note"><span class="badge badge-ginza">G</span> <b>Ginza Line (สายสีส้ม)</b>: Shibuya →
+                            Asakusa</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- DAY 4 -->
+        <!-- DAY 4: KAMAKURA (SLAM DUNK) -->
         <section id="day4" class="day-section">
             <div class="day-header">
                 <span class="day-number">04</span>
@@ -220,65 +327,123 @@
             <div class="day-card">
                 <img src="images/kamakura.png" alt="Slam Dunk" class="day-image">
                 <div class="timeline">
-                    <div class="option-box" style="margin-top:0;">
-                        <div class="option-title"><span class="option-tag">OPTION</span> 🚲 เช่าจักรยานที่ Kamakura?
-                        </div>
-                        <p style="margin-bottom:10px;">สามารถเช่าได้ที่ร้าน "Kamakura Rental Cycle" หน้าสถานี (¥600/ชม.)
-                            ปั่นเลาะริมทะเลไปจุด Slam Dunk ได้ (ทางราบ ปั่นง่ายกว่าเดิน)</p>
+                    <div class="timeline-item">
+                        <span class="time">07:00</span>
+                        <p class="activity">⏰ ตื่นนอน</p>
                     </div>
                     <div class="timeline-item">
                         <span class="time">08:00</span>
-                        <p class="activity">🚆 ไป Kamakura <span class="price-tag">¥1,130</span></p>
-                        <p class="note"><span class="badge badge-ginza">G</span> Asakusa → Ueno → <span
-                                class="badge badge-jr-ueno">JT</span> Kamakura</p>
+                        <p class="activity">🚆 Step 1: ไปสถานี Ueno <span class="price-tag">¥180</span></p>
+                        <p class="note"><span class="badge badge-ginza">G</span> <b>Ginza Line (สายสีส้ม)</b>: Asakusa →
+                            Ueno</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="time">08:15</span>
+                        <p class="activity">🚆 Step 2: ไปสถานี Kamakura <span class="price-tag">¥950</span></p>
+                        <p class="note"><span class="badge badge-jr-ueno">JT</span> <b>JR Ueno-Tokyo Line
+                                (สายสีส้ม/เขียว)</b>: Ueno → Kamakura</p>
+                        <p class="note">มองหาขบวนที่ไป "Odawara", "Zushi", หรือ "Atami"</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="time">10:00</span>
+                        <p class="activity">🚆 Step 3: เปลี่ยนไปขึ้นรถไฟ Enoden <span class="price-tag">Pass ¥800</span>
+                        </p>
+                        <p class="note">ซื้อตั๋ว "Enoden 1-Day Pass" ที่ตู้ขายตั๋วสถานี Kamakura</p>
                     </div>
                     <div class="timeline-item">
                         <span class="time">10:30</span>
-                        <p class="activity">🚆 Enoden to Slam Dunk Crossing</p>
+                        <p class="activity">🚃 นั่งรถไฟไปถ่ายรูป Slam Dunk</p>
+                        <p class="note"><span class="badge badge-enoden">EO</span> <b>Enoden Line (สายสีเขียว
+                                Vintage)</b>: Kamakura → Kamakurakōkō-Mae</p>
+                    </div>
+
+                    <div class="option-note">
+                        <strong>🚲 Option:</strong> เช่าจักรยานหน้าสถานี Kamakura ปั่นเลาะริมหาดไปจุดถ่ายรูปได้
+                        (¥600/ชม.)
+                    </div>
+
+                    <div class="timeline-item">
+                        <span class="time">12:00</span>
+                        <p class="activity">⛩️ นั่งรถไฟไปวัดพระใหญ่ (Kotoku-in)</p>
+                        <p class="note"><span class="badge badge-enoden">EO</span> Enoden Line: Kamakurakōkō-Mae → Hase
+                            Station</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="time">18:00</span>
+                        <p class="activity">🚆 นั่งรถไฟกลับ Tokyo (Asakusa) <span class="price-tag">¥1,130</span></p>
+                        <p class="note">1. <span class="badge badge-jr-ueno">JT</span> Kamakura → Ueno</p>
+                        <p class="note">2. <span class="badge badge-ginza">G</span> Ueno → Asakusa</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- DAY 5 -->
+        <!-- DAY 5: SAKURA FESTIVAL -->
         <section id="day5" class="day-section">
             <div class="day-header">
                 <span class="day-number">05</span>
-                <h2 class="day-title">Sakura Festival <span style="font-size: 1rem; color: var(--text-muted);">| Sun 16
-                        Feb</span></h2>
+                <h2 class="day-title">Matsuda Sakura Festival <span style="font-size: 1rem; color: var(--text-muted);">|
+                        Sun 16 Feb</span></h2>
             </div>
             <div class="day-card">
                 <img src="images/matsuda.png" alt="Matsuda" class="day-image">
                 <div class="timeline">
                     <div class="timeline-item">
+                        <span class="time">07:00</span>
+                        <p class="activity">⏰ ตื่นนอน</p>
+                    </div>
+                    <div class="timeline-item">
                         <span class="time">08:00</span>
-                        <p class="activity">🚆 ไป Matsuda <span class="price-tag">¥1,480</span></p>
-                        <p class="note"><span class="badge badge-ginza">G</span> Asakusa → Ueno → <span
-                                class="badge badge-jr-ueno">JT</span> Matsuda</p>
+                        <p class="activity">🚆 Step 1: ไปสถานี Ueno <span class="price-tag">¥180</span></p>
+                        <p class="note"><span class="badge badge-ginza">G</span> <b>Ginza Line (สายสีส้ม)</b>: Asakusa →
+                            Ueno</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="time">08:15</span>
+                        <p class="activity">🚆 Step 2: ไปสถานี Matsuda <span class="price-tag">¥1,300</span></p>
+                        <p class="note"><span class="badge badge-jr-ueno">JT</span> <b>JR Ueno-Tokyo Line
+                                (สายสีส้ม/เขียว)</b>: Ueno → Kozu</p>
+                        <p class="note">เปลี่ยนขบวนที่ Kozu → <span class="badge"
+                                style="background:#f77321; color:white;">JR</span> <b>Gotemba Line</b> → Matsuda</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="time">10:30</span>
+                        <p class="activity">🌸 ชมซากุระ Matsuda Sakura Festival</p>
+                        <p class="note">นั่ง Shuttle Bus จากหน้าสถานีขึ้นไปจุดชมวิว</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="time">20:30</span>
+                        <p class="activity">🚆 ถึงที่พัก พักผ่อน</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- DAY 6 -->
+        <!-- DAY 6: DEPARTURE -->
         <section id="day6" class="day-section">
             <div class="day-header">
                 <span class="day-number">06</span>
-                <h2 class="day-title">Bye Bye <span style="font-size: 1rem; color: var(--text-muted);">| Mon 17
+                <h2 class="day-title">Departure <span style="font-size: 1rem; color: var(--text-muted);">| Mon 17
                         Feb</span></h2>
             </div>
             <div class="day-card">
                 <div class="timeline">
                     <div class="timeline-item">
+                        <span class="time">06:30</span>
+                        <p class="activity">⏰ ตื่นนอน / Check-out</p>
+                    </div>
+                    <div class="timeline-item">
                         <span class="time">08:20</span>
-                        <p class="activity">🚆 ไป Narita Airport <span class="price-tag">¥1,300</span></p>
-                        <p class="note"><span class="badge badge-toei-asakusa">KS</span> Keisei Sky Access (Direct)</p>
+                        <p class="activity">🚆 ไปสนามบิน Narita Airport <span class="price-tag">¥1,300</span></p>
+                        <p class="note"><b>รถไฟ:</b> <span class="badge badge-toei-asakusa">KS</span> <b>Keisei Sky
+                                Access Express (Direct)</b></p>
+                        <p class="note">จากสถานี Asakusa (A18) → Narita Terminl 2-3</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- LOCAL SECTION -->
+        <!-- LOCAL -->
         <section id="local" class="guide-section">
             <h2 style="text-align: center; color: var(--sakura); font-size: 2.5rem; margin-bottom: 2rem;">🏮 Local Spots
             </h2>
