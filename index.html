@@ -64,6 +64,59 @@
 <body>
     <div id="progress-bar"></div>
 
+    <!-- Sidebar Trigger -->
+    <button class="sidebar-toggle" onclick="toggleSidebar()">
+        <span>🎌</span> VIEW FOLLOW ANIME
+    </button>
+
+    <!-- Sidebar -->
+    <div id="sidebar-overlay" class="sidebar-overlay" onclick="toggleSidebar()"></div>
+    <div id="sidebar" class="sidebar">
+        <div class="sidebar-header">
+            <h2>VIEW FOLLOW ANIME</h2>
+            <button class="close-sidebar" onclick="toggleSidebar()">&times;</button>
+        </div>
+        <div class="info-box" style="background: rgba(255, 121, 198, 0.1); border-color: #ff79c6; margin-bottom: 2rem;">
+            <p>📍 <b>Starting from Kaika Asakusa (Room C)</b> - Walking Distance!</p>
+        </div>
+        <div class="local-grid">
+            <div class="local-item">
+                <img src="https://images.unsplash.com/photo-1570737197116-297ca26a570c?q=80&w=300&auto=format&fit=crop"
+                    alt="Bandai HQ">
+                <h4>Bandai Headquarters</h4>
+                <p class="note"><b>5 mins walk</b>. Life-size statues outside.</p>
+            </div>
+            <div class="local-item">
+                <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=300&auto=format&fit=crop"
+                    alt="Senso-ji Anime">
+                <h4>Senso-ji Temple</h4>
+                <p class="note"><b>10 mins walk</b>. Anime/Manga vibes.</p>
+            </div>
+            <div class="local-item">
+                <img src="https://images.unsplash.com/photo-1628172856241-db496b490d16?q=80&w=300&auto=format&fit=crop"
+                    alt="Don Quijote">
+                <h4>Don Quijote Asakusa</h4>
+                <p class="note"><b>12 mins walk</b>. Merch paradise.</p>
+            </div>
+            <div class="local-item">
+                <img src="images/uma_musume_narita.png" alt="Narita Airport Anime">
+                <h4>Narita Airport (T2)</h4>
+                <p class="note"><b>Anime:</b> Uma Musume Pretty Derby</p>
+                <p class="note"><b>Spot:</b> International Arrival Lobby</p>
+                <a href="https://www.google.com/maps/search/?api=1&query=Narita+Airport+Terminal+2" target="_blank"
+                    class="badge"
+                    style="background: #4285F4; text-decoration: none; margin-top: 5px; display: inline-block;">📍 Open
+                    G-Maps</a>
+            </div>
+            <div class="local-item">
+                <img src="https://images.unsplash.com/photo-1616422285623-13ff0167d96a?q=80&w=300&auto=format&fit=crop"
+                    alt="Toy Street">
+                <h4>Toy Street (Edomachi)</h4>
+                <p class="note"><b>8 mins walk</b>. Local character goods.</p>
+            </div>
+        </div>
+    </div>
+
     <header>
         <div>
             <h1>MY TRAVEL PLAN</h1>
@@ -81,7 +134,6 @@
             <li><a href="#day5">15</a></li>
             <li><a href="#day6">16</a></li>
             <li><a href="#day7">17</a></li>
-            <li><a href="#anime" style="color: #ff79c6;">ANIME</a></li>
         </ul>
     </nav>
 
@@ -649,42 +701,10 @@
             </div>
         </section>
 
-        <!-- ANIME WALKING TOUR -->
-        <section id="anime" class="guide-section">
-            <h2 style="text-align: center; color: #ff79c6; font-size: 2.5rem; margin-bottom: 2rem;">🌸 Anime Walking
-                Spots (Near Kaika)</h2>
-            <div class="info-box" style="background: rgba(255, 121, 198, 0.1); border-color: #ff79c6;">
-                <p>📍 <b>Starting from Kaika Asakusa (Room C)</b> - All spots are within 5-15 mins walking distance!</p>
-            </div>
-            <div class="local-grid">
-                <div class="local-item">
-                    <img src="https://images.unsplash.com/photo-1570737197116-297ca26a570c?q=80&w=300&auto=format&fit=crop"
-                        alt="Bandai HQ">
-                    <h4>Bandai Headquarters</h4>
-                    <p class="note"><b>5 mins walk</b>. Life-size statues outside (Ultraman, Anpanman, etc.)</p>
-                </div>
-                <div class="local-item">
-                    <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=300&auto=format&fit=crop"
-                        alt="Senso-ji Anime">
-                    <h4>Senso-ji Temple</h4>
-                    <p class="note"><b>10 mins walk</b>. Featured in <i>Love Live!</i> and <i>Kimetsu no Yaiba</i>
-                        vibes.</p>
-                </div>
-                <div class="local-item">
-                    <img src="https://images.unsplash.com/photo-1628172856241-db496b490d16?q=80&w=300&auto=format&fit=crop"
-                        alt="Don Quijote">
-                    <h4>Don Quijote Asakusa</h4>
-                    <p class="note"><b>12 mins walk</b>. Massive floor of Anime merchandise & figures.</p>
-                </div>
-                <div class="local-item">
-                    <img src="https://images.unsplash.com/photo-1616422285623-13ff0167d96a?q=80&w=300&auto=format&fit=crop"
-                        alt="Toy Street">
-                    <h4>Toy Street (Edomachi)</h4>
-                    <p class="note"><b>8 mins walk</b>. Traditional toy shops & local character goods.</p>
-                </div>
-            </div>
-        </section>
+        <!-- ANIME WALKING TOUR REMOVED FROM MAIN CONTENT -->
     </main>
+
+
 
     <footer
         style="text-align: center; padding: 4rem 2rem; color: var(--text-muted); border-top: 1px solid rgba(255,255,255,0.1);">
@@ -692,6 +712,11 @@
     </footer>
 
     <script>
+        function toggleSidebar() {
+            document.getElementById('sidebar').classList.toggle('active');
+            document.getElementById('sidebar-overlay').classList.toggle('active');
+        }
+
         window.onscroll = function () {
             let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
             let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
