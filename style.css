@@ -263,6 +263,77 @@ nav {
   background-color: #e60012;
 }
 
+/* Text Colors for Train Lines */
+.text-ginza {
+  color: #ff9500;
+  font-weight: 800;
+}
+
+.text-jr-yamanote {
+  color: #80c241;
+  font-weight: 800;
+}
+
+.text-jr-yokosuka {
+  color: #007ac0;
+  font-weight: 800;
+}
+
+.text-jr-ueno {
+  color: #d15daa;
+  font-weight: 800;
+}
+
+.text-toei-asakusa {
+  color: #e6006c;
+  font-weight: 800;
+}
+
+.text-jr-tokaido {
+  color: #f39700;
+  font-weight: 800;
+}
+
+.text-keisei {
+  color: #003fa2;
+  font-weight: 800;
+}
+
+.text-odakyu {
+  color: #22b5e2;
+  font-weight: 800;
+}
+
+.text-tx {
+  color: #e60012;
+  font-weight: 800;
+}
+
+.text-enoden {
+  color: #2ea854;
+  font-weight: 800;
+}
+
+/* Added Custom Green for Enoden */
+.text-jr-chuo {
+  color: #f39700;
+  font-weight: 800;
+}
+
+.text-shinkansen {
+  color: #2ea854;
+  font-weight: 800;
+}
+
+/* Approximate Green */
+.text-fujikyu {
+  color: #22b5e2;
+  font-weight: 800;
+}
+
+/* Fujikyu Railway Blue */
+
+
 /* Guide Sections */
 .guide-section {
   margin-top: 4rem;
